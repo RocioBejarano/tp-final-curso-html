@@ -1,0 +1,27 @@
+.newsletter {
+  width: 80%;
+  margin: 0 auto 2rem;
+
+  form {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 576px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    input[name="email"] {
+      padding: 0 1rem;
+      border-radius: .625rem;
+      border: .0625rem solid;
+    }
+
+    button[type="submit"] {
+        border: unset;
+        border-radius: .625rem;
+        padding: 0 1rem;
+        background-color: #c8facd;
+    }
+  }
+}

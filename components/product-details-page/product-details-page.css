@@ -1,0 +1,144 @@
+.product-details {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+
+  .product-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .main-image {
+      width: 100%;
+      border-radius: 2rem;
+      border: 0.0625rem solid;
+    }
+
+    .thumbnails-images {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+      @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      & > img {
+        width: 15%;
+        border-radius: 1rem;
+        border: 0.0625rem solid;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+          width: 4.375rem;
+        }
+      }
+    }
+  }
+
+  .product-information {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .product-title {
+      font-size: 2rem;
+    }
+
+    .product-sizes,
+    .product-colors {
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .product-sizes {
+      .sizes {
+        display: flex;
+        gap: 2rem;
+
+        .size {
+          width: 2.5rem;
+          text-align: center;
+          line-height: 2.5rem;
+          border: 0.0625rem solid #808080;
+          border-radius: 0.5rem;
+          font-weight: 700;
+          cursor: pointer;
+        }
+
+        .size.disabled {
+          background-color: #d3d3d3;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .product-colors {
+      margin: 1rem 0;
+
+      .colors {
+        display: flex;
+        gap: 2rem;
+
+        .color {
+          cursor: pointer;
+          width: 1.875rem;
+          height: 1.875rem;
+          border: 0.0625rem solid #808080;
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    .product-quantity {
+      display: flex;
+      width: fit-content;
+      border: 0.0625rem solid #808080;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+
+      .quantity-substract,
+      .quantity-add,
+      .quantity {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .quantity-substract,
+      .quantity-add {
+        width: 1.875rem;
+        background-color: #d3d3d3;
+        cursor: pointer;
+      }
+
+      .quantity-substract {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+      }
+
+      .quantity-add {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+
+      .quantity {
+        width: 3.75rem;
+        border-left: 0.0625rem solid #808080;
+        border-right: 0.0625rem solid #808080;
+      }
+    }
+
+    .add-to-cart {
+      border: unset;
+      line-height: 3rem;
+      border-radius: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosé</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../layout/header/header.css" />
+    <link rel="stylesheet" href="product-details-page.css" />
+    <link rel="stylesheet" href="../../layout/footer/footer.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../../images/logo.jpg" alt="logo" class="logo" />
+      </a>
+      <h1>Rosé</h1>
+      <nav>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="searchbox">
+        <input type="text" placeholder="Búsqueda..." />
+        <i class="fas fa-search"></i>
+      </div>
+      <i class="fas fa-search mobile-search"></i>
+      <div class="icon-container">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-sign-out-alt"></i>
+      </div>
+    </header>
+    <main>
+      <div class="product-details">
+        <div class="product-images">
+          <img
+            class="main-image"
+            src="../../images/camisa1.webp"
+            alt="main-image"
+          />
+          <div class="thumbnails-images">
+            <img src="../../images/camisa1.webp" alt="thumbnail-image" />
+            <img src="../../images/camisa1.webp" alt="thumbnail-image" />
+            <img src="../../images/camisa1.webp" alt="thumbnail-image" />
+            <img src="../../images/camisa1.webp" alt="thumbnail-image" />
+          </div>
+        </div>
+        <div class="product-information">
+          <h2 class="product-title">Producto</h2>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta
+            nisi elit, in sodales orci maximus non. Sed a nisl sed metus mattis
+            aliquet. Donec aliquam ipsum ipsum, nec porta lectus semper sit
+            amet. Vivamus tristique, sapien in luctus aliquet.
+          </p>
+          <div class="product-sizes">
+            <h3>Talles</h3>
+            <div class="sizes">
+              <div class="size">1</div>
+              <div class="size">2</div>
+              <div class="size disabled">3</div>
+              <div class="size">4</div>
+            </div>
+          </div>
+          <div class="product-colors">
+            <h3>Colores</h3>
+            <div class="colors">
+              <div class="color" style="background-color: #ff0000"></div>
+              <div class="color" style="background-color: #ffffff"></div>
+              <div class="color" style="background-color: #0000ff"></div>
+            </div>
+          </div>
+          <div class="product-quantity">
+            <span class="quantity-substract">-</span>
+            <span class="quantity">1</span>
+            <span class="quantity-add">+</span>
+          </div>
+          <button class="add-to-cart">Agregar</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Rosé. Todos los derechos reservados.</p>
+      <button>Botón de arrepentimiento</button>
+    </footer>
+  </body>
+</html>

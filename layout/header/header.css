@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  box-sizing: unset;
+}
+
+header {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #c5c9cb;
+  padding: 1rem 0;
+
+  @media (max-width: 576px), (min-width: 577px) and (max-width: 1000px) {
+    padding: 0.5rem 0;
+  }
+
+  nav {
+    margin-left: 4rem;
+
+    @media (max-width: 576px), (min-width: 577px) and (max-width: 1000px) {
+      display: none;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1200px) {
+      margin-left: 0;
+    }
+
+    & > ul {
+      display: flex;
+      margin: auto 0;
+
+      li {
+        list-style-type: none;
+        line-height: 3rem;
+        padding: 0 2rem;
+
+        &:hover {
+          background-color: #dde0e2;
+          border-radius: 2rem;
+        }
+
+        &,
+        &:hover {
+          transition: 300ms ease-in;
+        }
+
+        & > a,
+        & > a:hover {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .logo {
+    height: 3rem;
+    width: 3rem;
+    margin: auto 0;
+    border-radius: 6.25rem;
+    margin: auto 0 auto 6rem;
+
+    @media (max-width: 576px), (min-width: 577px) and (max-width: 1000px) {
+      margin-left: 1rem;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1200px) {
+      margin-left: 2rem;
+    }
+  }
+
+  h1 {
+    margin: auto 0;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #9e9e27;
+  }
+
+  .mobile-search {
+    @media (max-width: 576px) {
+      display: flex;
+      align-items: center;
+      padding-left: 1.25rem;
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 577px) {
+      display: none;
+    }
+  }
+
+  .searchbox {
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 21.25rem;
+    margin-left: 6rem;
+
+    @media (max-width: 576px) {
+      display: none;
+      margin-left: 0;
+      width: 16rem;
+    }
+
+    @media (min-width: 577px) and (max-width: 1000px) {
+      margin-left: 0;
+      width: 40%;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1200px) {
+      width: 20rem;
+      margin-left: 0;
+    }
+
+    input {
+      all: unset;
+      width: 15.625rem;
+    }
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+
+    i {
+      font-size: 1.25rem;
+    }
+  }
+}

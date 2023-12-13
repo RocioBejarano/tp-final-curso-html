@@ -1,0 +1,113 @@
+#productos {
+  width: 80%;
+  margin: 0 auto 2rem;
+
+  .products-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 577px) and (max-width: 1000px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.625rem;
+      justify-content: center;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1250px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.625rem;
+      justify-content: center;
+    }
+
+    .product-card {
+      width: 15.625rem;
+      display: flex;
+      flex-direction: column;
+      border: 0.0625rem solid #000;
+      border-radius: 1.5rem 0;
+
+      @media (max-width: 576px), (min-width: 577px) and (max-width: 1000px) {
+        width: 14rem;
+        flex: 0 0 auto;
+        margin-bottom: 0.625rem;
+      }
+
+      & > a,
+      & > a:hover {
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 12.5rem;
+          height: 12.5rem;
+          margin: 1rem auto;
+        }
+
+        .product-title {
+          width: fit-content;
+          max-width: 13.625rem;
+          margin: 0 auto;
+        }
+
+        .price-container {
+          display: flex;
+          gap: 0.5rem;
+          padding: 0 1rem;
+          border-top: 0.0625rem solid #808080;
+          justify-content: center;
+          font-size: 0.875rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          padding-top: 0.5rem;
+
+          p {
+            margin: 0;
+          }
+
+          .previous-price,
+          .current-price,
+          .price-discount {
+            display: flex;
+            align-items: center;
+          }
+
+          .previous-price {
+            text-decoration-line: line-through;
+          }
+
+          .price-discount {
+            background: #c8facd;
+            border-radius: 1.5rem;
+            color: #000;
+            font-size: 0.75rem;
+            height: 1.25rem;
+            line-height: 1.375rem;
+            max-width: 100%;
+            padding: 0 0.5rem;
+          }
+        }
+      }
+
+      .add-to-cart-btn {
+        display: flex;
+        justify-content: center;
+        height: 2rem;
+        background-color: #ada9a9;
+        border-bottom-right-radius: 1.5rem;
+        border: unset;
+        margin-top: 0.1875rem;
+        align-items: center;
+      }
+    }
+  }
+}
