@@ -1,0 +1,30 @@
+.main-information {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+
+  .paragraphs, img {
+    width: 48%;
+  }
+
+  .paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  img {
+    border-radius: 2rem;
+  }
+}
+
+@media (max-width: 576px), (min-width: 577px) and (max-width: 1000px) {
+  .main-information {
+    flex-direction: column;
+  }
+
+  .main-information > .paragraphs, .main-information > img {
+    width: 100%;
+  } 
+}

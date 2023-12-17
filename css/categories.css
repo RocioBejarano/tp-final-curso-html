@@ -2,6 +2,10 @@
   width: 80%;
   margin: 0 auto 2rem;
 
+  h2 {
+    color: #988600;
+  }
+
   .category-container {
     display: flex;
     flex-direction: row;
@@ -23,10 +27,11 @@
       width: 18.75rem;
       display: flex;
       flex-direction: column;
-      border: 0.0625rem solid #000;
+      border: 0.0625rem solid #d5bc1b;
       border-radius: 1.5rem;
 
       img {
+        height: 21.875rem;
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
       }
@@ -40,6 +45,7 @@
         border: unset;
         border-bottom-right-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
+        background-color: #d5bc1b;
       }
     }
   }

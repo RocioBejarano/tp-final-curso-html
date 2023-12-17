@@ -2,6 +2,10 @@
   width: 80%;
   margin: 0 auto 2rem;
 
+  h2 {
+    color: #988600;
+  }
+
   form {
     display: flex;
     gap: 1rem;
@@ -14,14 +18,14 @@
     input[name="email"] {
       padding: 0 1rem;
       border-radius: .625rem;
-      border: .0625rem solid;
+      border: .0625rem solid #d5bc1b;
     }
 
     button[type="submit"] {
         border: unset;
         border-radius: .625rem;
         padding: 0 1rem;
-        background-color: #c8facd;
+        background-color: #d5bc1b;
     }
   }
 }

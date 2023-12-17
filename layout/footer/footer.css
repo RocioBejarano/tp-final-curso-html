@@ -1,5 +1,5 @@
 footer {
-  background-color: #c5c9cb;
+  background-color: #e9ce24;
   display: flex;
   flex-direction: column;
 
@@ -7,6 +7,17 @@ footer {
     margin: 0 auto;
     width: fit-content;
     padding: 1rem 0;
+  }
+
+  .icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+
+    i {
+      cursor: pointer;
+    }
   }
 
   button {

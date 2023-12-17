@@ -13,7 +13,7 @@
     .main-image {
       width: 100%;
       border-radius: 2rem;
-      border: 0.0625rem solid;
+      border: 0.0625rem solid #d5bc1b;
     }
 
     .thumbnails-images {
@@ -30,7 +30,7 @@
       & > img {
         width: 15%;
         border-radius: 1rem;
-        border: 0.0625rem solid;
+        border: 0.0625rem solid #d5bc1b;
         cursor: pointer;
 
         @media (max-width: 768px) {
@@ -47,12 +47,14 @@
 
     .product-title {
       font-size: 2rem;
+      color: #988600;
     }
 
     .product-sizes,
     .product-colors {
       h3 {
         font-size: 1.5rem;
+        color: #ac9809;
       }
     }
 
@@ -65,7 +67,7 @@
           width: 2.5rem;
           text-align: center;
           line-height: 2.5rem;
-          border: 0.0625rem solid #808080;
+          border: 0.0625rem solid #d5bc1b;
           border-radius: 0.5rem;
           font-weight: 700;
           cursor: pointer;
@@ -89,7 +91,7 @@
           cursor: pointer;
           width: 1.875rem;
           height: 1.875rem;
-          border: 0.0625rem solid #808080;
+          border: 0.0625rem solid #d5bc1b;
           border-radius: 1rem;
         }
       }
@@ -98,7 +100,7 @@
     .product-quantity {
       display: flex;
       width: fit-content;
-      border: 0.0625rem solid #808080;
+      border: 0.0625rem solid #d5bc1b;
       border-radius: 0.5rem;
       margin-bottom: 2rem;
 
@@ -128,8 +130,8 @@
 
       .quantity {
         width: 3.75rem;
-        border-left: 0.0625rem solid #808080;
-        border-right: 0.0625rem solid #808080;
+        border-left: 0.0625rem solid #d5bc1b;
+        border-right: 0.0625rem solid #d5bc1b;
       }
     }
 
@@ -139,6 +141,7 @@
       border-radius: 2rem;
       font-size: 1.5rem;
       font-weight: 700;
+      background-color: #d5bc1b;
     }
   }
 }
